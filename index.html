@@ -7,7 +7,22 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://googleapis.com" rel="stylesheet">
 </head>
+    <script>
+const music = document.getElementById("music");
+const playButton = document.getElementById("playButton");
+
+playButton.addEventListener("click", () => {
+  if (music.paused) {
+    music.play();
+    playButton.textContent = "❚❚";
+  } else {
+    music.pause();
+    playButton.textContent = "▶";
+  }
+});
+</script>
 <body>
+    
 
     <!-- هيدر الموقع المنسق بخلفية خريفية دافئة -->
     <header style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('window.gif'); background-size: cover; background-position: center;">
