@@ -98,6 +98,66 @@ nav a:hover {
     color: #9c6644;
 }
 
+.music-player {
+  width: 320px;
+  padding: 18px;
+  background: #2b211c;
+  border: 1px solid #8b7355;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #eadcc8;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  font-family: Georgia, serif;
+}
+
+.music-cover {
+  width: 55px;
+  height: 55px;
+  background: #806044;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.music-info {
+  flex: 1;
+}
+
+.music-label {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #b99b73;
+}
+
+.music-info h3 {
+  margin: 4px 0;
+  font-size: 15px;
+}
+
+.music-info p {
+  margin: 0;
+  font-size: 11px;
+  color: #bcae9c;
+}
+
+.play-button {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: #c6a77b;
+  color: #2b211c;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.play-button:hover {
+  transform: scale(1.08);
+}
 /* شبكة المسلسلات والأفلام المنسقة */
 .shows-grid {
     display: grid;
