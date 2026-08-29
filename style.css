@@ -1,0 +1,170 @@
+/* تنسيقات عامة للموقع الخريفي */
+body {
+    background-color: #f7f3ed; /* خلفية كريمية دافئة مريحة للعين */
+    color: #4a3728; /* لون خط بني داكن خريفي */
+    font-family: 'Cairo', 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* الهيدر والعناوين */
+header {
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+    border-bottom: 5px solid #d97724; /* خط برتقالي خريفي محروق */
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 3.2rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+/* قائمة التنقل السريع */
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+    font-weight: bold;
+    background: rgba(96, 56, 19, 0.85);
+    padding: 8px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+nav a:hover {
+    background: #d97724;
+}
+
+/* حاوية المحتوى الشخصي */
+.container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* صناديق الأقسام المختلفة */
+.blog-section {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    border-left: 5px solid #8c6239; /* تمييز الأقسام بخط بني جانبي */
+}
+
+.blog-section h2 {
+    color: #8c6239;
+    border-bottom: 2px dashed #e6ccb2;
+    padding-bottom: 12px;
+    margin-top: 0;
+}
+
+/* التدوينات الفردية والصور المرفقة */
+.post {
+    background: #fdfbf7;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ede0d4;
+    margin-bottom: 25px;
+}
+
+.post-img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #9c6644;
+}
+
+/* شبكة المسلسلات والأفلام المنسقة */
+.shows-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media(min-width: 600px) {
+    .shows-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.show-card {
+    background: #f5ebe0;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e6ccb2;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.show-card:hover {
+    transform: translateY(-3px);
+}
+
+.show-card h4 {
+    margin-top: 0;
+    color: #603813;
+    font-size: 1.1rem;
+}
+
+/* شبكة معرض صور بنتريست */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    height: 240px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* صناديق القوائم (Currently & Playlist) */
+.currently-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.currently-box li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f5ebe0;
+}
+
+/* أسفل الموقع */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #4a3728;
+    color: #ede0d4;
+    font-size: 0.9rem;
+    margin-top: 60px;
+}
